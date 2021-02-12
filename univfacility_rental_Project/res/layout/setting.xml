@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fffff2"
+    android:padding="2dp">
+
+   <ImageView
+       android:id="@+id/login_info"
+       android:layout_width="130dp"
+       android:layout_height="40dp"
+       android:layout_marginRight="10dp"
+       android:padding="3dp"
+       android:src="@drawable/login_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_vertical"
+        android:padding="3dp" >
+        
+         <ImageView
+              android:id="@+id/user"
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:layout_marginRight="10dp"
+              android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jungha1234"
+            android:textColor="#475724"
+            android:textSize="20sp" 
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/pwd_set_btn"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:onClick="mOnClick_passwd"
+            android:text="비밀번호 재설정"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:onClick="mOnClick_logout"
+            android:text="로그아웃"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#BA9A7D" />
+
+    <ImageView
+        android:id="@+id/alarm"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:padding="3dp"
+        android:src="@drawable/alarm" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp" >
+     
+     <ImageView
+         android:id="@+id/alarm_on"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:src="@drawable/alarm_on" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="ON"
+            android:textColor="#475724" 
+            android:textStyle="bold" />
+        
+         <ImageView
+             android:id="@+id/alarm_off"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_marginLeft="6dp"
+             android:src="@drawable/alarm_off" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textColor="#475724"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:background="#BA9A7D" />
+     
+     <ImageView
+         android:id="@+id/service"
+         android:layout_width="130dp"
+         android:layout_height="40dp"
+         android:layout_marginRight="10dp"
+         android:padding="3dp"
+         android:src="@drawable/service" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/qa_btn"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:onClick="mOnClick_qa"
+            android:padding="4dp"
+            android:text="Q&amp;A 및 오류신고"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:layout_marginBottom="5dp"
+     android:layout_marginTop="5dp"
+     android:background="#BA9A7D" />
+
+  <ImageView
+      android:id="@+id/program_info"
+      android:layout_width="160dp"
+      android:layout_height="40dp"
+      android:padding="3dp"
+      android:src="@drawable/program_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/version_btn"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:onClick="mOnClick_version"
+            android:text="버전 정보"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/developer_info_btn"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:onClick="mOnClick_developer"
+            android:text="개발자 정보"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>

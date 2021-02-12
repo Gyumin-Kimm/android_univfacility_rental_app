@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+  
+    <TextView
+        android:id="@+id/equip_tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="code"
+        android:textColor="#475724"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/equip_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="name"
+        android:textColor="#475724"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/equip_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="type"
+        android:textColor="#475724"
+        android:textSize="13sp" />
+
+
+</LinearLayout>

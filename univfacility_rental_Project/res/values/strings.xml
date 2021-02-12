@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">성공회대 시설물 대여</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="choice">선택</string>
+    <string name="building">"건물 선택 "</string>
+    <string name="title_activity_test">MainActivity</string>
+    <string name="list">"대여 인원 목록 "</string>
+    <string name="phone">신청자 전화번호</string>
+    <string name="application">신청 접수</string>
+    <string name="error_r">오류 신고</string>
+    <string name="aa">QnA</string>
+    <string name="application1">대여 신청</string>
+    <string name="building_choice">건물선택</string>
+
+    <!-- 타이틀 -->
+    <string name="title_activity_main">성공회대 시설물 대여</string>
+    <string name="title_activity_login">로그인</string>
+    <string name="title_activity_join">회원가입</string>
+    <string name="title_activity_user_main">메인</string>
+    <string name="title_activity_book_step1">대여신청</string>
+    <string name="title_activity_book_step2">대여신청</string>
+    <string name="title_activity_book_step3">대여신청</string>
+    <string name="title_activity_my_page">마이 페이지</string>
+    <string name="title_activity_my_book">신청 내역 조회</string>
+    <string name="title_activity_setting">설정</string>
+    <string name="title_activity_qa">Qa 및 오류신고</string>
+    <string name="title_activity_develop_info">개발자 정보</string>
+
+    <!-- 메뉴 -->
+    <string name="action_discard">Discard</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_my__answer">1:1 문의 답변</string>
+    <string name="title_activity_my__answer__detail">1:1 문의 답변</string>
+    <string name="title_activity_my__book__details">My_Book_Details</string>
+    <string name="title_activity_my__book__detail">My_Book_Detail</string>
+    <string name="title_activity_admin">관리자 메인</string>
+    <string name="title_activity_board">공지사항</string>
+    <string name="title_activity_approval">신청 승인</string>
+    <string name="title_activity_manage">관리</string>
+    <string name="title_activity_board_write">글쓰기</string>
+    <string name="title_activity_board_content">공지 내용</string>
+
+    <!-- 관리자 -->
+
+    <string name="action_edit">Edit</string>
+    <string name="title_activity_member">회원관리</string>
+    <string name="title_activity_admin_qna">QnA관리</string>
+    <string name="title_activity_member_info">회원관리</string>
+    <string name="title_activity_admin_qna_info">QnA관리</string>
+    <string name="title_activity_approval_info">신청 승인</string>
+    <string name="title_activity_equipment">사용 가능 장비</string>
+
+</resources>

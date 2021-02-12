@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <!-- GCM 관련 퍼미션 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.example.andproject.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.andproject.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM 관련 퍼미션 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="user_Activity.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="user_Activity.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="user_Activity.Join"
+            android:label="@string/title_activity_join"
+            android:parentActivityName="user_Activity.Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Login" />
+        </activity>
+        <activity
+            android:name="user_Activity.User_Main"
+            android:label="@string/title_activity_user_main" >
+        </activity>
+        <activity
+            android:name="user_Activity.Book_step1"
+            android:label="@string/title_activity_book_step1"
+            android:parentActivityName="user_Activity.User_Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.User_Main" />
+        </activity>
+        <activity
+            android:name="user_Activity.Book_step2"
+            android:label="@string/title_activity_book_step2"
+            android:parentActivityName="user_Activity.Book_step1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Book_step1" />
+        </activity>
+        <activity
+            android:name="user_Activity.Book_step3"
+            android:label="@string/title_activity_book_step3"
+            android:parentActivityName="user_Activity.Book_step2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Book_step2" />
+        </activity>
+        <activity
+            android:name="user_Activity.My_Page"
+            android:label="@string/title_activity_my_page"
+            android:parentActivityName="user_Activity.User_Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.User_Main" />
+        </activity>
+        <activity
+            android:name="user_Activity.My_Book"
+            android:label="@string/title_activity_my_book"
+            android:parentActivityName="user_Activity.My_Page" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.My_Page" />
+        </activity>
+        <activity
+            android:name="user_Activity.Setting"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName="user_Activity.User_Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.User_Main" />
+        </activity>
+        <activity
+            android:name="user_Activity.User_Qna"
+            android:label="@string/title_activity_qa"
+            android:parentActivityName="user_Activity.Setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Setting" />
+        </activity>
+        <activity
+            android:name="user_Activity.Develop_info"
+            android:label="@string/title_activity_develop_info"
+            android:parentActivityName="user_Activity.Setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Setting" />
+        </activity>
+
+        <!--  -->
+
+        <receiver
+            android:name="gcm.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="gcm" />
+                <!-- 주의!! 프로젝트 패키지와 동일하게!! -->
+            </intent-filter>
+        </receiver>
+
+        <service android:name="gcm.GcmIntentService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="6171000" />
+
+        <activity
+            android:name="user_Activity.My_Answer"
+            android:label="@string/title_activity_my__answer"
+            android:parentActivityName="user_Activity.My_Page" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.My_Page" />
+        </activity>
+        <activity
+            android:name="user_Activity.My_Answer_Detail"
+            android:label="@string/title_activity_my__answer__detail"
+            android:parentActivityName="user_Activity.My_Answer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.My_Answer" />
+        </activity>
+        <activity
+            android:name="user_Activity.My_Book_Details"
+            android:label="@string/title_activity_my__book__details"
+            android:parentActivityName="user_Activity.My_Book" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.My_Book" />
+        </activity>
+        <activity
+            android:name="user_Activity.My_Book_Detail"
+            android:label="@string/title_activity_my__book__detail"
+            android:parentActivityName="user_Activity.My_Book" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.My_Book" />
+        </activity>
+        <activity
+            android:name="admin_Activity.AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:parentActivityName="user_Activity.Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Login" />
+        </activity>
+        <activity
+            android:name="admin_Activity.BoardActivity"
+            android:label="@string/title_activity_board"
+            android:parentActivityName="admin_Activity.AdminActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.AdminActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.ApprovalActivity"
+            android:label="@string/title_activity_approval"
+            android:parentActivityName="admin_Activity.AdminActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.AdminActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.ManageActivity"
+            android:label="@string/title_activity_manage"
+            android:parentActivityName="admin_Activity.AdminActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.AdminActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.BoardWriteActivity"
+            android:label="@string/title_activity_board_write"
+            android:parentActivityName="admin_Activity.BoardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.BoardActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.BoardContentActivity"
+            android:label="@string/title_activity_board_content"
+            android:parentActivityName="admin_Activity.BoardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.BoardActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.MemberActivity"
+            android:label="@string/title_activity_member"
+            android:parentActivityName="admin_Activity.ManageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.ManageActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.AdminQnaActivity"
+            android:label="@string/title_activity_admin_qna"
+            android:parentActivityName="admin_Activity.ManageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.ManageActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.MemberInfoActivity"
+            android:label="@string/title_activity_member_info"
+            android:parentActivityName="admin_Activity.MemberActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.MemberActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.AdminQnaInfoActivity"
+            android:label="@string/title_activity_admin_qna_info"
+            android:parentActivityName="admin_Activity.AdminQnaActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.AdminQnaActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.ApprovalInfoActivity"
+            android:label="@string/title_activity_approval_info"
+            android:parentActivityName="admin_Activity.ApprovalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.andproject.ApprovalActivity" />
+        </activity>
+        <activity
+            android:name="admin_Activity.EquipmentActivity"
+            android:label="@string/title_activity_equipment"
+            android:parentActivityName="admin_Activity.ApprovalInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin_Activity.ApprovalInfoActivity" />
+        </activity>
+        <activity
+            android:name="user_Activity.Equipment"
+            android:label="@string/title_activity_equipment"
+            android:parentActivityName="user_Activity.Book_step3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="user_Activity.Book_step3" />
+        </activity>
+    </application>
+
+</manifest>

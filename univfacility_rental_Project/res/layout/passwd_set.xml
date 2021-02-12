@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5pt" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="현재 비밀번호"
+        android:textColor="#475724"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/present_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape5"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="2dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="5dp"
+        android:text="새 비밀번호"
+        android:textColor="#475724"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape5"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="5dp"
+        android:text="새 비밀번호 재입력"
+        android:textColor="#475724"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/new_pwd_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape5"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="2dp" />
+
+</LinearLayout>

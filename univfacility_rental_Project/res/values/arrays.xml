@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="buildings">
+        <item>전체</item>
+        <item>승연관</item>
+        <item>일만관</item>
+        <item>월당관</item>
+        <item>열림관</item>
+        <item>나눔관</item>
+        <item>이천환관</item>
+        <item>새천년관</item>
+        <item>성미가엘성당</item>
+        <item>미가엘관</item>
+    </string-array>
+    
+    <string-array name="floors">
+        <item>전체</item>
+        <item>1층</item>
+        <item>2층</item>
+        <item>3층</item>
+    </string-array>
+    
+     <string-array name="major">
+     <item>전체</item>
+     <item>신학과</item>
+	 <item>영어학과</item>
+	 <item>일어일본학과</item>
+     <item>중어중국학과</item>
+	 <item>사회복지학과</item>
+	 <item>사회과학부</item>
+	 <item>신문방송학과</item>
+	 <item>경영학부</item>
+	 <item>디지털컨텐츠학과</item>
+	 <item>멀티미디어시스템공학과</item>
+	 <item>소프트웨어공학과</item>
+	 <item>정보통신공학과 </item>
+	 <item>글로컬IT학과 </item>
+    </string-array>
+    
+	
+     <string-array name="hour">
+     <item>09</item>
+     <item>10</item>
+	 <item>11</item>
+	 <item>12</item>
+     <item>13</item>
+	 <item>14</item>
+	 <item>15</item>
+	 <item>16</item>
+	 <item>17</item>
+	 <item>18</item>
+	 <item>19</item>
+	 <item>20</item>
+	 <item>21 </item>
+    </string-array>
+    
+     <string-array name="equipment">
+		<item>BEEM</item>
+		<item>CAMERA</item>
+		<item>EMP</item>
+		<item>MICROPHONE</item>
+		<item>MONITOR</item>
+		<item>NOTEBOOK</item>
+		<item>PDA</item>
+		<item>PHONE</item>
+		<item>LAZERPOINTER</item>
+	</string-array>
+    
+    
+</resources>

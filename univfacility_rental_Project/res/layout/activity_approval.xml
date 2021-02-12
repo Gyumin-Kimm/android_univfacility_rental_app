@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff2"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.ApprovalActivity" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/approval_btn_choosedate"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="37dip"
+            android:text="날짜선택"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/approval_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="날짜"
+            android:textColor="#475724"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+ 
+        <Button
+            android:id="@+id/approval_btn_search"
+            style="@style/btnStyledark_khaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="37dip"
+            android:text="조회 및 갱신"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/btnStyleSandrift"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="대여자"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="시설코드"
+	        android:textColor="#ffffff"
+	        android:textSize="13sp"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="날짜"
+	        android:textColor="#ffffff"
+	        android:textSize="13sp"
+	        android:textStyle="bold" />
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="상태"
+	        android:textColor="#ffffff"
+	        android:textSize="13sp"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="번호"
+	        android:textColor="#ffffff"
+	        android:textSize="13sp"
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/approval_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

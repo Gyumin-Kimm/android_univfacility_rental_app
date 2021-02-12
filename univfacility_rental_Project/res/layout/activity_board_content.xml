@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boardcontent_ll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.BoardContentActivity" >
+    
+    <LinearLayout
+        android:id="@+id/boardcontent_ll01"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/shape4"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/boardcontent_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                
+                android:gravity="center"
+                android:text="글쓴이"
+                android:textColor="#69523d"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+	    
+	    <TextView
+	        android:id="@+id/boardcontent_tv_writer"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/shape2"
+	        android:gravity="center"
+	        android:text="writer" />
+	    
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boardcontent_ll02"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/shape4"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/boardcontent_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                
+                android:gravity="center"
+                android:text="제목"
+                android:textColor="#69523d"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/boardcontent_tv_subject"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/shape2"
+	        android:gravity="center"
+	        android:text="subject" />
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boardcontent_ll03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/shape4"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/boardcontent_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="내용"
+                android:textColor="#69523d"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/boardcontent_tv_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/shape2"
+	        android:gravity="center"
+	        android:text="content" />
+
+    </LinearLayout>
+
+</LinearLayout>
